@@ -14,7 +14,7 @@
             cursor: crosshair;
         }
 
-        
+
     </style>
 </head>
 <body>
@@ -52,6 +52,7 @@
             <li>odds: <a id="odds"></a></li>
             <li>evens: <a id="evens"></a></li>
             <li>biggest: <a id="biggest"></a></li>
+            <li>start: <a id="start"></a></li>
         </ul>
     </details>
     <hr>
@@ -104,6 +105,7 @@
         }
 
         function fillInfo(a) {
+            document.getElementById('start').innerHTML = a[0];
             document.getElementById('size').innerHTML = a.length;
             let odds = 0;
             let evens = 0;
